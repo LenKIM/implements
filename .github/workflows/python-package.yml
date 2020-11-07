@@ -27,8 +27,6 @@ jobs:
         pip install requests python-dateutil
     - name: Git Show
       run: |
-        git init
-        git remote add origin https://github.com/LenKIM/implements.git
         git fetch
         git show origin/Len -s --format="%aI" > Len.txt
         git show origin/Dhkim -s --format="%aI" > Dhkim.txt
