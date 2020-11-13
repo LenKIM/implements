@@ -59,8 +59,8 @@ def calc_penalt(diff_hours, name):
     
 diff_Dhkim = get_diff_hours(data_Dhkim)
 # diff_Dhkim = 97.089
-calc_penalt(diff_Dhkim, "김동혁")
+calc_penalt(diff_Dhkim, "@김동혁")
 
 diff_Len = get_diff_hours(data_Len)
 # diff_Len = 12.867
-calc_penalt(diff_Len, "김정규")
+calc_penalt(diff_Len, "@김정규")
