@@ -3,17 +3,13 @@
 
 name: "누가 푸쉬했을까?"  
 
+
 on:
-  pull_request:
-    branches: 
-      - Dhkim
-      - Len
   push:
-    branches:
-      - Dhkim
-      - Len
-      - len
-      - dhkim
+    branches: [master, Dhkim, Len]
+  pull_request:
+    branches: [master, Dhkim, Len]
+
 
 jobs:
   build:
@@ -32,11 +28,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install requests python-dateutil
-    - name: Git Show
-      run: |
-        git fetch
-        git show origin/Len -s --format="%aI" > Len.txt
-        git show origin/Dhkim -s --format="%aI" > Dhkim.txt
     - name: Run Python
       run: |
         python3 inform_who_push.py ${{ github.actor }}
