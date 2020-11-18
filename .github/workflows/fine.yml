@@ -32,4 +32,4 @@ jobs:
         git show origin/Dhkim -s --format="%aI" > Dhkim.txt
     - name: Run Python
       run: |
-        python3 inform_fine.py
+        python3 sss.py
