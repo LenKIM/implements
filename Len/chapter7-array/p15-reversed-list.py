@@ -13,3 +13,12 @@ class Solution:
             return reverse(next, node)
 
         return reverse(head)
+
+    def reverseList2(self, head: ListNode) -> ListNode:
+        node, prev = head, None
+
+        while node:
+            next, node.next = node.next, prev
+            prev, node = node, next
+
+        return prev
