@@ -29,6 +29,7 @@ class Solution:
             prev = node
         return node
 
+    # 자료형 반환
     def addTwoNumbers(self, l1:ListNode, l2:ListNode) -> ListNode:
         a = self.toList(self.reverseList(l1)
         b = self.toList(self.reverseList(l2)
@@ -36,4 +37,6 @@ class Solution:
         resultStr = int(''.join(str(e) for e in a)) + int(''.join(str(e) for e in b))
 
         return self.toReversedLinkedList(str(resultStr))
+
+
 
