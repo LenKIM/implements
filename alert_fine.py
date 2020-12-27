@@ -47,9 +47,9 @@ def calc_penalt(diff_hours, name):
         send_to_slack(message)
         
     
-# diff_Dhkim = get_diff_hours(data_Dhkim)
-# # diff_Dhkim = 97.089
-# calc_penalt(diff_Dhkim, "@김동혁")
+diff_Dhkim = get_diff_hours(data_Dhkim)
+# diff_Dhkim = 97.089
+calc_penalt(diff_Dhkim, "@김동혁")
 
 diff_Len = get_diff_hours(data_Len)
 # diff_Len = 12.867
