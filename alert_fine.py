@@ -5,6 +5,11 @@ from dateutil.parser import parse as dateutil_parse
 import datetime
 from datetime import timezone
 
+"""
+1 시간 전 경고
+"""
+
+
 now_dt = datetime.datetime.now(tz=timezone.utc)
 
 path_Dhkim = "Dhkim.txt"
