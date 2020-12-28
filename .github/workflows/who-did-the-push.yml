@@ -6,7 +6,7 @@ name: "누가 푸쉬했을까?"
 
 on:
   push:
-    branches: [Dhkim, Len]
+    branches: [master, Dhkim, Len]
   pull_request:
     branches: [master, Dhkim, Len]
 
