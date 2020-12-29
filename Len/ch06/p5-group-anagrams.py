@@ -3,7 +3,7 @@ from typing import List
 
 input = ["eat", "tea", "tan", "ate", "nat", "bat"]
 
-print("hello World")
+
 # 정렬하여 딕셔너리에 추가
 def groupAnagrams(strs: List[str]) -> List[List[str]]:
     anagrams = collections.defaultdict(list)

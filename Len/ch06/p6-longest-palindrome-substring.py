@@ -4,6 +4,7 @@
 class Solution:
 
     def longestPalindrome(self, s: str) -> str:
+
         def expand(left: int, right: int) -> str:
             # 팰린드롬 판별 및 투 포인터 확장
             while left >= 0 and right <= len(s) and s[left] == s[right - 1]:
