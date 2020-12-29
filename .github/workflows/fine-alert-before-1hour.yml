@@ -25,8 +25,8 @@ jobs:
       - name: Git Show
         run: |
           git fetch
-          git show origin/Len -s --format=“%aI” > Len.txt
-          git show origin/Dhkim -s --format=“%aI” > Dhkim.txt
+          git show origin/Len -s --format="%aI" > Len.txt
+          git show origin/Dhkim -s --format="%aI" > Dhkim.txt
       - name: Run Python
         run: |
           python3 alert_fine.py
