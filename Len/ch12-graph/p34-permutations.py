@@ -19,6 +19,7 @@ class Solution:
 
                 prev_elements.append(e)
                 dfs(next_elements)
+
                 prev_elements.pop()
 
         dfs(nums)
