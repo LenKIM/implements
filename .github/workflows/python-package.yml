@@ -1,7 +1,7 @@
 # This workflow will install Python dependencies, run tests and lint with a variety of Python versions
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: "벌금을 먹이자!"
+name: "벌금 한 시간 전 경고"
 
 on:
   schedule:
@@ -32,4 +32,4 @@ jobs:
         git show origin/Dhkim -s --format="%aI" > Dhkim.txt
     - name: Run Python
       run: |
-        python3 inform_fine.py
+        python3 alert_fine.py

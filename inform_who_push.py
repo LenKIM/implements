@@ -19,4 +19,4 @@ def send_to_slack(msg):
 
 
 name = sys.argv
-send_to_slack('방금 누군가 PUSH 했다. 긴장해라- 그건 바로 ' + name[0])
+send_to_slack(f'방금 {name[1]}가 PUSH 했어요')
