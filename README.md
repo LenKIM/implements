@@ -8,9 +8,8 @@
 
 |                     | 문제                                                         | 현황 | 비고 |
 | ------------------- | ------------------------------------------------------------ | ---- | ---- |
-| 1 weeks(2021-02-05) | 43번 -이진트리의 직경 - [링크](https://leetcode.com/problems/diameter-of-binary-tree/)<br />44번 -가장긴동일값의 경로 - [링크](https://leetcode.com/problems/longest-univalue-path/)<br /><br /><br />[해커랭크 문제](https://www.hackerrank.com/interview/interview-preparation-kit/warmup/challenges)<br />- Sales By Match<br />- Counting Vally<br />- Jumping on the Clouds<br />- Repeated String |      |      |
-|                     |                                                              |      |      |
-|                     |                                                              |      |      |
+| 1 weeks(2021-02-05) | 43번 -이진트리의 직경 - [링크](https://leetcode.com/problems/diameter-of-binary-tree/)<br />44번 -가장긴동일값의 경로 - [링크](https://leetcode.com/problems/longest-univalue-path/)<br /><br /><br />[해커랭크 문제](https://www.hackerrank.com/interview/interview-preparation-kit/warmup/challenges)<br />- Sales By Match<br />- Counting Vally<br />- Jumping on the Clouds<br />- Repeated String | len 👌<br>dhkim 👌    |      |
+| 2 weeks(2021-02-12) | 45번 - 이진 트리 반전 - [링크](https://leetcode.com/problems/invert-binary-tree/)<br />46번 -두 이진 트리 병합 - [링크](https://leetcode.com/problems/merge-two-binary-trees/)<br /><br /><br />[해커랭크 문제](https://www.hackerrank.com/interview/interview-preparation-kit)<br />- (linked-lists) Insert a node at a specific position in a linked list<br />- (linked-lists) Inserting a Node Into a Sorted Doubly Linked List<br />- (stacks-queues) Largest Rectangle |      |      ||                     |                                                              |      |      |
 |                     |                                                              |      |      |
 |                     |                                                              |      |      |
 |                     |                                                              |      |      |
