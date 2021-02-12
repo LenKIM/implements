@@ -20,10 +20,6 @@ class Solution:
             node = queue.popleft()
 
             if node:
-                print(node.val)
-
-
-            if node:
                 node.left, node.right = node.right, node.left
 
                 queue.append(node.left)
