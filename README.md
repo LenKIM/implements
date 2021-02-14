@@ -6,11 +6,11 @@
 
 범주 - 오케이 👌 | 못품 🙅‍♂️
 
-|                     | 문제                                                         | 현황 | 비고 |
+| 날짜 | 문제                                                         | 현황 | 비고 |
 | ------------------- | ------------------------------------------------------------ | ---- | ---- |
 | 1 weeks(2021-02-05) | 43번 -이진트리의 직경 - [링크](https://leetcode.com/problems/diameter-of-binary-tree/)<br />44번 -가장긴동일값의 경로 - [링크](https://leetcode.com/problems/longest-univalue-path/)<br /><br /><br />[해커랭크 문제](https://www.hackerrank.com/interview/interview-preparation-kit/warmup/challenges)<br />- Sales By Match<br />- Counting Vally<br />- Jumping on the Clouds<br />- Repeated String | len 👌<br>dhkim 👌    |      |
-| 2 weeks(2021-02-12) | 45번 - 이진 트리 반전 - [링크](https://leetcode.com/problems/invert-binary-tree/)<br />46번 -두 이진 트리 병합 - [링크](https://leetcode.com/problems/merge-two-binary-trees/)<br /><br /><br />[해커랭크 문제](https://www.hackerrank.com/interview/interview-preparation-kit)<br />- (linked-lists) Insert a node at a specific position in a linked list<br />- (linked-lists) Inserting a Node Into a Sorted Doubly Linked List<br />- (stacks-queues) Largest Rectangle |      |      ||                     |                                                              |      |      |
-|                     |                                                              |      |      |
+| 2 weeks(2021-02-12) | 45번 - 이진 트리 반전 - [링크](https://leetcode.com/problems/invert-binary-tree/)<br />46번 -두 이진 트리 병합 - [링크](https://leetcode.com/problems/merge-two-binary-trees/)<br /><br /><br />[해커랭크 문제](https://www.hackerrank.com/interview/interview-preparation-kit)<br />- (linked-lists) Insert a node at a specific position in a linked list<br />- (linked-lists) Inserting a Node Into a Sorted Doubly Linked List<br />- (stacks-queues) Largest Rectangle | Largest Rectangle 문제 풀지 못함. 다음주로 연기 |      |
+| 3 weeks(2021-02-19) | 47번 - 이진 트리 직렬화 & 역직렬화 - [링크](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)<br />48번 - 균형 이진 트리 - [링크](https://leetcode.com/problems/balanced-binary-tree/)<br />49번 -최소 높이 트리 - [링크](https://leetcode.com/problems/minimum-height-trees/)<br /><br /><br />[해커랭크 문제](https://www.hackerrank.com/interview/interview-preparation-kit)<br />- (stacks-queues) Largest Rectangle<br />- (stacks-queues) Castle on the Grid |      |      |
 |                     |                                                              |      |      |
 |                     |                                                              |      |      |
 |                     |                                                              |      |      |
