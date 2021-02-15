@@ -24,4 +24,4 @@ class Solution:
                 if cur_root.left:
                     queue.append(cur_root.right)
             # BFS 반복 횟수 == 깊
-            return depth
+        return depth
