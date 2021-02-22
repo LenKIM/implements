@@ -3,6 +3,8 @@ from collections import defaultdict
 
 """
 https://leetcode.com/problems/minimum-height-trees
+
+Linked List 없이 DFS 재귀 탐색 및 메모이제이션으로 노드별 최대 깊이 구하기
 """
 
 
