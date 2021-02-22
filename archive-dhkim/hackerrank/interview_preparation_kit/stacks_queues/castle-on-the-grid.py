@@ -11,11 +11,15 @@ import re
 import sys
 
 
+# 매트릭스 탐색 문제를 재귀로 풀지 말 것. (recursion 한계 초과로 오류남)
+# 무난하게 큐를 사용하여 BFS로 풀자
+# BFS의 경우, 무한루프가 생기지 않도록 중복 방문을 막는 것이 중요한데, 이 문제는 방문한 "방향"을 고려하여 중복 방문을 막아야 함
+
 def minimumMoves(grid, startX, startY, goalX, goalY):
     direct = [(0, 1), (1, 0), (0, -1), (-1, 0)]
 
     # piece's x, y, direction, move_cnt
-    queue = [(startX, startY, -1, 1, set())]
+    queue = [(startX, startY, -1, 1)]
 
     visit_matrix = dict()  # x_y_dir -> move_cnt
 
@@ -24,7 +28,7 @@ def minimumMoves(grid, startX, startY, goalX, goalY):
     # BFS
     while queue:
         # 큐의 맨 앞 확인
-        p_x, p_y, p_direction, p_cnt, history = queue.pop(0)
+        p_x, p_y, p_direction, p_cnt = queue.pop(0)
 
         # 목적지 도달한 경우, minium_move 갱신
         if p_x == goalX and p_y == goalY:
@@ -39,10 +43,6 @@ def minimumMoves(grid, startX, startY, goalX, goalY):
             position = f"{nextX}_{nextY}"
             visit_key = f"{nextX}_{nextY}_{i}"
 
-            # 현재까지의 경로에 이미 방문했던 위치라면 스킵
-            if position in history:
-                continue
-
             if visit_key in visit_matrix and visit_matrix[visit_key] <= nextM:
                 continue
 
@@ -52,18 +52,16 @@ def minimumMoves(grid, startX, startY, goalX, goalY):
 
             # 주위 공간 중 유효한 곳을 큐에 입력
             if 0 <= nextX < len(grid) and 0 <= nextY < len(grid[0]) and grid[nextX][nextY] != 'X':
-                queue.append((nextX, nextY, i, nextM, history.union({position})))
+                queue.append((nextX, nextY, i, nextM))
                 visit_matrix[visit_key] = nextM
 
     return minium_move
 
 
-
-
 # sys.setrecursionlimit(1000)
 
 # # Complete the minimumMoves function below.
-# def minimumMoves(grid, startX, startY, goalX, goalY):
+# def minimumMoves_recursion(grid, startX, startY, goalX, goalY):
 #
 #
 #     directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
