@@ -67,6 +67,9 @@ def insertNodeAtPosition(head: SinglyLinkedListNode, data, position):
     if result is not None and result.next is None:
         result.next = node
 
+
+    # node.next = head.next
+
     while True:
         if head is None:
             break
