@@ -80,8 +80,8 @@
 
 
 ### 11. trees
-- [ ] Tree: Height of a Binary Tree
-- [ ] Binary Search Tree : Lowest Common Ancestor
+- [x] Tree: Height of a Binary Tree
+- [x] Binary Search Tree : Lowest Common Ancestor
 - [ ] Trees: Is This a Binary Search Tree?
 - [ ] Tree: Huffman Decoding
 - [ ] Balanced Forest
