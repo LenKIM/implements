@@ -6,16 +6,16 @@
 
 범주 - 오케이 👌 | 못품 🙅‍♂️
 
-| 날짜 | 문제                                                         | 현황 | 비고 |
-| ------------------- | ------------------------------------------------------------ | ---- | ---- |
-| 1 weeks(2021-02-05) | 43번 -이진트리의 직경 - [링크](https://leetcode.com/problems/diameter-of-binary-tree/)<br />44번 -가장긴동일값의 경로 - [링크](https://leetcode.com/problems/longest-univalue-path/)<br /><br /><br />[해커랭크 문제](https://www.hackerrank.com/interview/interview-preparation-kit/warmup/challenges)<br />- Sales By Match<br />- Counting Vally<br />- Jumping on the Clouds<br />- Repeated String | len 👌<br>dhkim 👌    |      |
-| 2 weeks(2021-02-12) | 45번 - 이진 트리 반전 - [링크](https://leetcode.com/problems/invert-binary-tree/)<br />46번 -두 이진 트리 병합 - [링크](https://leetcode.com/problems/merge-two-binary-trees/)<br /><br /><br />[해커랭크 문제](https://www.hackerrank.com/interview/interview-preparation-kit)<br />- (linked-lists) Insert a node at a specific position in a linked list<br />- (linked-lists) Inserting a Node Into a Sorted Doubly Linked List<br />- (stacks-queues) Largest Rectangle | Largest Rectangle 문제 풀지 못함. 다음주로 연기 |      |
-| 3 weeks(2021-02-19) | 47번 - 이진 트리 직렬화 & 역직렬화 - [링크](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)<br />48번 - 균형 이진 트리 - [링크](https://leetcode.com/problems/balanced-binary-tree/)<br />49번 -최소 높이 트리 - [링크](https://leetcode.com/problems/minimum-height-trees/)<br /><br /><br />[해커랭크 문제](https://www.hackerrank.com/interview/interview-preparation-kit)<br />- (stacks-queues) Largest Rectangle<br />- (stacks-queues) Castle on the Grid | Largest Rectangle 또 못품.. Castle on the Grid 풀다가 시간 다감 |      |
-| 4 weeks(2021-02-26) | 50번 - 정렬된 배열의 이진 탐색 트리 변환 - [링크](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)<br />51번 - 이진 탐색 트리를 더 큰 수 합계 트리로 - [링크](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)<br /><br /><br />[해커랭크 문제](https://www.hackerrank.com/interview/interview-preparation-kit)<br />- (linked-list) Reverse a doubly linked list<br />- (linked-list) Find Merge Point of Two Lists |      |      |
-|                     |                                                              |      |      |
-|                     |                                                              |      |      |
-|                     |                                                              |      |      |
-|                     |                                                              |      |      |
+| Leetcode                                               | Hackerrank | 현황 |
+| ------------------------------------------------------------ | ---- | ---- |
+| 43번 [링크](https://leetcode.com/problems/diameter-of-binary-tree/)<br />44번 [링크](https://leetcode.com/problems/longest-univalue-path/)<br /> | [해커랭크 문제](https://www.hackerrank.com/interview/interview-preparation-kit/warmup/challenges)<br />- Sales By Match<br />- Counting Vally<br />- Jumping on the Clouds<br />- Repeated String | len 👌<br>dhkim 👌    |
+| 45번 [링크](https://leetcode.com/problems/invert-binary-tree/)<br />46번  [링크](https://leetcode.com/problems/merge-two-binary-trees/)<br /> | [해커랭크 문제](https://www.hackerrank.com/interview/interview-preparation-kit)<br />- Insert a node at a specific position in a linked list<br />- Inserting a Node Into a Sorted Doubly Linked List<br />- Largest Rectangle | len 👌<br/>dhkim 👌 |
+| 47번 [링크](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)<br />48번 [링크](https://leetcode.com/problems/balanced-binary-tree/)<br />49번 [링크](https://leetcode.com/problems/minimum-height-trees/) | [해커랭크 문제](https://www.hackerrank.com/interview/interview-preparation-kit)<br />- Largest Rectangle<br />- Castle on the Grid | len 👌<br/>dhkim 👌 |
+| 50번 [링크](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)<br />51번 [링크](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)<br /> | [해커랭크 문제](https://www.hackerrank.com/interview/interview-preparation-kit)<br />- Reverse a doubly linked list<br />- Find Merge Point of Two Lists | len 👌<br/>dhkim 👌 |
+|                                                              |      |      |
+|                                                              |      |      |
+|                                                              |      |      |
+|                                                              |      |      |
 
 
 
@@ -25,10 +25,6 @@
 
 Slack + Github 노티 푸시 형식으로 진행후 코드리뷰 후 PR merge 진행 (단, 각자 푼 시간을 체크하여 기재)
 
-### 파일 이름 규칙
-
-leetcode_문제이름_이니셜, programmers_문제이름_이니셜, baekjoon_문제이름_이니셜
-
 ### 풀이 시간 기재
 
 예: 1시간 이상 - 초과, 00분~60분 사이
@@ -37,13 +33,11 @@ leetcode_문제이름_이니셜, programmers_문제이름_이니셜, baekjoon_�
 
 1시간 30분 코드 리뷰 및 손코딩 대비, 30분 즉석 문제 풀이(추후 변경 가능)
 
-(주차별 폴더에 보관할 것인지 미정 - 의견주세요!)
-
 
 
 # 3. 푸는 문제
 
-- 파이썬 알고리즘 인터뷰 문제 리스트 // TODO
+- 파이썬 알고리즘 인터뷰 문제 리스트
 
 - [해커링크 문제 리스트](https://github.com/LenKIM/implements/blob/master/hackerrank_list.md)
 

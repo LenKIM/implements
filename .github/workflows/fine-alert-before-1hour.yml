@@ -1,32 +1,33 @@
-## This workflow will install Python dependencies, run tests and lint with a variety of Python versions
-## For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
-#
-#
-#name: "벌금 한 시간 전 경고"
-#on:
-#  schedule:
-#    - cron: "30 * * * *"
-#jobs:
-#  build:
-#    runs-on: ubuntu-latest
-#    strategy:
-#      matrix:
-#        python-version: [3.7]
-#    steps:
-#      - uses: actions/checkout@v2
-#      - name: Set up Python ${{ matrix.python-version }}
-#        uses: actions/setup-python@v2
-#        with:
-#          python-version: ${{ matrix.python-version }}
-#      - name: Install dependencies
-#        run: |
-#          python -m pip install --upgrade pip
-#          pip install requests python-dateutil
-#      - name: Git Show
-#        run: |
-#          git fetch
-#          git show origin/Len -s --format="%aI" > Len.txt
-#          git show origin/Dhkim -s --format="%aI" > Dhkim.txt
-#      - name: Run Python
-#        run: |
-#          python3 alert_fine.py
+# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+
+name: "벌금 한 시간 전 경고"
+on:
+  schedule:
+    - cron: "30 * * * *"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.7]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests python-dateutil
+      - name: make git commit traces files
+        run: |
+          git fetch
+          git show origin/JWL -s --format="%aI" > jw.txt
+          git show origin/dev -s --format="%aI" > Len.txt
+          git show origin/temp_dhkim -s --format="%aI" > Dhkim.txt
+      - name: Run Python
+        run: |
+          python3 alert_fine.py
