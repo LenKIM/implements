@@ -30,7 +30,7 @@ jobs:
         git fetch
         git show origin/JWL -s --format="%aI" > jw.txt
         git show origin/dev -s --format="%aI" > Len.txt
-        git show origin/temp_dhkim -s --format="%aI" > Dhkim.txt
+        git show origin/tmp_dhkim -s --format="%aI" > Dhkim.txt
     - name: Run Python
       run: |
         python3 inform_fine.py
