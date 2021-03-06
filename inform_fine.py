@@ -8,12 +8,16 @@ now_dt = datetime.datetime.now(tz=timezone.utc)
 
 path_Dhkim = "Dhkim.txt"
 path_Len = "Len.txt"
+jw = "jw.txt"
 
 with open(path_Dhkim, 'r') as fp:
     data_Dhkim = fp.read().strip()
     
 with open(path_Len, 'r') as fp:
     data_Len = fp.read().strip()
+
+with open(jw, 'r') as fp:
+    data_jw = fp.read().strip()
 
 def send_to_slack(msg):
     headers = {"Content-type": "application/json;charset=utf-8"}
@@ -40,9 +44,6 @@ def get_diff_hours(time_data):
 
 def calc_penalt(diff_hours, name):
 
-    alert_limit = 24
-    limits = 48
-    
     remains = diff_hours - 48
     
     
@@ -53,8 +54,7 @@ def calc_penalt(diff_hours, name):
     
     message = f"{name}, 벌금:{penalty}, 경과시간:{diff_hours}"
     
-    if now_dt.hour % 6 == 0:
-        send_to_slack(message)
+    send_to_slack(message)
         
     
 diff_Dhkim = get_diff_hours(data_Dhkim)
@@ -64,3 +64,7 @@ calc_penalt(diff_Dhkim, "@김동혁")
 diff_Len = get_diff_hours(data_Len)
 # diff_Len = 12.867
 calc_penalt(diff_Len, "@김정규")
+
+diff_jw = get_diff_hours(data_jw)
+# diff_Len = 12.867
+calc_penalt(diff_jw, "@임재원")
