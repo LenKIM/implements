@@ -52,9 +52,15 @@ def get_diff_hours(time_data):
 def calc_penalt(diff_hours, name):
     diff_hours_floor = math.floor(diff_hours)
 
+    if diff_hours_floor == 42:
+        message = f"{name}, 벌금까지 6시간 남았습니다"
+        send_to_slack(message)
+        
     if diff_hours_floor == 47:
         message = f"{name}, 벌금까지 1시간 남았습니다"
         send_to_slack(message)
+        
+
 
 
 diff_Dhkim = get_diff_hours(data_Dhkim)
