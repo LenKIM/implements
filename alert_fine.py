@@ -7,7 +7,7 @@ import requests
 from dateutil.parser import parse as dateutil_parse
 
 """
-1 시간 전 경고
+1 시간 전 / 6시간 전 경고
 """
 
 now_dt = datetime.datetime.now(tz=timezone.utc)
