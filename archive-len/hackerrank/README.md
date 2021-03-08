@@ -64,7 +64,7 @@
 
 ### 9. stacks-queues
 - [ ] Balanced Brackets
-- [ ] Queues: A Tale of Two Stacks
+- [x] Queues: A Tale of Two Stacks
 - [ ] Largest Rectangle
 - [ ] Min Max Riddle
 - [x] Castle on the Grid
@@ -90,7 +90,7 @@
 ### 12. linked-lists
 - [x] Insert a node at a specific position in a linked list
 - [x] Inserting a Node Into a Sorted Doubly Linked List
-- [ ] Reverse a doubly linked list
+- [X] Reverse a doubly linked list
 - [x] Find Merge Point of Two Lists
 - [ ] Linked Lists: Detect a Cycle
 
