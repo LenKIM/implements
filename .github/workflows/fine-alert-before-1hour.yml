@@ -2,7 +2,7 @@
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
 
-name: "벌금 한 시간 전 경고"
+name: "벌금 6시간 전 / 한 시간 전  경고"
 on:
   schedule:
     - cron: "30 * * * *"
@@ -27,7 +27,7 @@ jobs:
           git fetch
           git show origin/JWL -s --format="%aI" > jw.txt
           git show origin/dev -s --format="%aI" > Len.txt
-          git show origin/temp_dhkim -s --format="%aI" > Dhkim.txt
+          git show origin/tmp_dhkim -s --format="%aI" > Dhkim.txt
       - name: Run Python
         run: |
           python3 alert_fine.py
