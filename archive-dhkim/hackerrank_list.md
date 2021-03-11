@@ -22,7 +22,7 @@
 
 
 ### 4. sorting
-- [ ] Sorting: Bubble Sort
+- [x] Sorting: Bubble Sort
 - [ ] Mark and Toys
 - [ ] Sorting: Comparator
 - [ ] Fraudulent Activity Notifications
