@@ -44,7 +44,7 @@ def get_diff_hours(time_data):
 
 def calc_penalt(diff_hours, name):
 
-    remains = diff_hours - 60
+    remains = diff_hours - 48
     
     
     if remains < 0:
