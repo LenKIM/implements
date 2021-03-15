@@ -38,7 +38,7 @@
 
 
 ### 6. greedy-algorithms
-- [ ] Minimum Absolute Difference in an Array
+- [x] Minimum Absolute Difference in an Array
 - [ ] Luck Balance
 - [ ] Greedy Florist
 - [ ] Max Min
