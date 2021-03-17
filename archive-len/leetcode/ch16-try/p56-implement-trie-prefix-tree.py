@@ -15,7 +15,7 @@ class Trie:
             if char not in node.children:
                 node.children[char] = TrieNode()
             node = node.children[char]
-        node.word = True
+        node.word = word
 
     def search(self, word: str) -> bool:
         node = self.root
