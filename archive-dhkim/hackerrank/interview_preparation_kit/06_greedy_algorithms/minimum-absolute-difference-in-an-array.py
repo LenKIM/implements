@@ -12,20 +12,20 @@ import sys
 
 
 # 각 원소를 모든 원소와 비교하여 절대편차를 구하는 O(n^2) 시간복잡도 방법
-def minimumAbsoluteDifference_naive(arr):
-    min_abs_diff = None
-    for i_idx, i_n in enumerate(arr):
-        for j_idx, j_n in enumerate(arr):
-            if i_idx == j_idx:
-                continue
-
-            abs_diff = abs(i_n - j_n)
-            if min_abs_diff is None:
-                min_abs_diff = abs_diff
-            else:
-                min_abs_diff = min(min_abs_diff, abs_diff)
-
-    return min_abs_diff
+# def minimumAbsoluteDifference_naive(arr):
+#     min_abs_diff = None
+#     for i_idx, i_n in enumerate(arr):
+#         for j_idx, j_n in enumerate(arr):
+#             if i_idx == j_idx:
+#                 continue
+#
+#             abs_diff = abs(i_n - j_n)
+#             if min_abs_diff is None:
+#                 min_abs_diff = abs_diff
+#             else:
+#                 min_abs_diff = min(min_abs_diff, abs_diff)
+#
+#     return min_abs_diff
 
 
 def minimumAbsoluteDifference_sort(arr):
