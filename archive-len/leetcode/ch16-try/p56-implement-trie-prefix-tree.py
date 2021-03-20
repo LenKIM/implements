@@ -1,4 +1,5 @@
 import collections
+
 class TrieNode:
     def __init__(self):
         self.word = False
@@ -6,19 +7,26 @@ class TrieNode:
 
 class Trie:
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.root = TrieNode()
 
     def insert(self, word: str) -> None:
         node = self.root
+
+        # 단어의 어절을 하나씩 돌면서 node 의 children 을 확인합니다.
+        # 만약 있다면 타고 들어가고, 없으면 TrieNode 을 새롭게 만들기
         for char in word:
             if char not in node.children:
                 node.children[char] = TrieNode()
-            node = node.children[char]
-        node.word = word
 
+            node = node.children[char]
+
+        node.word = True
+
+    # 검색도 Insert 와 비슷하게, 그러나 반환값이 bool
     def search(self, word: str) -> bool:
         node = self.root
+
         for char in word:
             if char not in node.children:
                 return False
@@ -26,13 +34,14 @@ class Trie:
 
         return node.word
 
-
-    def startsWith(self, prefix: str) -> bool:
+    def startWith(self, prefix: str) -> bool:
         node = self.root
+
         for char in prefix:
             if char not in node.children:
                 return False
             node = node.children[char]
+
         return True
 
 
