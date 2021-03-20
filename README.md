@@ -6,7 +6,7 @@
 
 범주 - 오케이 👌 | 못품 🙅‍♂️
 
-| Leetcode                                               | Hackerrank | 현황 |
+| Leetcode                                               | Hackerrank/Programmers | 현황 |
 | ------------------------------------------------------------ | ---- | ---- |
 | [문제43](https://leetcode.com/problems/diameter-of-binary-tree/)<br>[문제44](https://leetcode.com/problems/longest-univalue-path/) | - [Sales By Match](https://www.hackerrank.com/challenges/sock-merchant/problem)<br>- [Counting Vally](https://www.hackerrank.com/challenges/counting-valleys/problem)<br>- [Jumping on the Clouds](https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem)<br>- [Repeated String](https://www.hackerrank.com/challenges/repeated-string/problem) | len 👌<br>dhkim 👌    |
 | [문제45](https://leetcode.com/problems/invert-binary-tree/)<br>[문제46](https://leetcode.com/problems/merge-two-binary-trees/) | - [Insert a node at a specific position in a linked list](https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem)<br>- [Inserting a Node Into a Sorted Doubly Linked List](https://www.hackerrank.com/challenges/insert-a-node-into-a-sorted-doubly-linked-list/problem)<br>- [Largest Rectangle](https://www.hackerrank.com/challenges/largest-rectangle/problem) | len 👌<br>dhkim 👌 |
@@ -14,8 +14,8 @@
 | [문제50](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)<br>[문제51](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/) | - [Reverse a doubly linked list](https://www.hackerrank.com/challenges/reverse-a-doubly-linked-list/problem)<br>- [Find Merge Point of Two Lists](https://www.hackerrank.com/challenges/find-the-merge-point-of-two-joined-linked-lists/problem) | len 👌<br>dhkim 👌 |
 | [문제52](https://leetcode.com/problems/range-sum-of-bst/)<br>[문제53](https://leetcode.com/problems/minimum-distance-between-bst-nodes/) | - [Tree: Height of a Binary Tree](https://www.hackerrank.com/challenges/tree-height-of-a-binary-tree/problem)<br>- [Binary Search Tree : Lowest Common Ancestor](https://www.hackerrank.com/challenges/binary-search-tree-lowest-common-ancestor/problem) | len 👌<br>dhkim 👌 |
 | [문제54](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)<br>[문제55](https://leetcode.com/problems/kth-largest-element-in-an-array) | - [Sorting: Bubble Sort](https://www.hackerrank.com/challenges/ctci-bubble-sort/problem)<br>- [Mark and Toys](https://www.hackerrank.com/challenges/mark-and-toys/problem)<br>- [Sorting: Comparator](https://www.hackerrank.com/challenges/ctci-comparator-sorting/problem) | len 👌<br>dhkim 👌<br>jwl 👌 |
-| [문제56](https://leetcode.com/problems/implement-trie-prefix-tree)<br>[문제57](https://leetcode.com/problems/palindrome-pairs) | - [더 맵게](https://programmers.co.kr/learn/courses/30/lessons/42626)<br>- [Minimum Absolute Difference in an Array](https://www.hackerrank.com/challenges/minimum-absolute-difference-in-an-array/problem) |      |
-|                                                              |      |      |
+| [문제56](https://leetcode.com/problems/implement-trie-prefix-tree)<br>[문제57](https://leetcode.com/problems/palindrome-pairs) | - [더 맵게](https://programmers.co.kr/learn/courses/30/lessons/42626)<br>- [Minimum Absolute Difference in an Array](https://www.hackerrank.com/challenges/minimum-absolute-difference-in-an-array/problem) | len 👌<br/>dhkim 🙅‍♂️<br>jwl 👌 |
+| [문제58](https://leetcode.com/problems/sort-list)<br>[문제59](https://leetcode.com/problems/merge-intervals)<br>[문제60](https://leetcode.com/problems/insertion-sort-list) | - [타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165)<br>- [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) |      |
 
 
 
