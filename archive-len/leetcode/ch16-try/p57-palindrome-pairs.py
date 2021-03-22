@@ -1,6 +1,7 @@
 import collections
 from typing import List
 
+# ![](https://tva1.sinaimg.cn/large/008eGmZEgy1goq6bevwdfj30re0zedkn.jpg)
 
 class TrieNode:
     def __init__(self):
@@ -87,5 +88,5 @@ class Solution:
 
 
 solution = Solution()
-pairs = solution.palindromePairs(["abcd", "dcba", "lls", "s", "sssll"])
+pairs = solution.palindromePairs(["d", "cbbc dcddcd ", "dcbb", "dcbc", "cbbc", "bbcd"])
 print(pairs)
