@@ -49,7 +49,7 @@ def get_diff_hours(time_data):
     return diff_hours
 
 
-def calc_penalt(diff_hours, name):
+def calc_penalty(last_commit_hour, diff_hours, name):
     diff_hours_floor = math.floor(diff_hours)
 
     # if diff_hours_floor == 36:
@@ -57,11 +57,11 @@ def calc_penalt(diff_hours, name):
     #     send_to_slack(message)
 
     if diff_hours_floor == 42:
-        message = f"{name}, 벌금까지 6시간 남았습니다"
+        message = f"최근 커밋시각은 {last_commit_hour}.  {name}, 벌금까지 6시간 남았습니다"
         send_to_slack(message)
 
     if diff_hours_floor == 47:
-        message = f"{name}, 벌금까지 6시간 남았습니다"
+        message = f"최근 커밋시각은 {last_commit_hour}. {name}, 벌금까지 1시간 남았습니다"
         send_to_slack(message)
 
     # if diff_hours_floor == 59:
@@ -69,10 +69,10 @@ def calc_penalt(diff_hours, name):
     #     send_to_slack(message)
 
 diff_Dhkim = get_diff_hours(data_Dhkim)
-calc_penalt(diff_Dhkim, "@김동혁")
+calc_penalty(data_Dhkim, diff_Dhkim, "@김동혁")
 
 diff_Len = get_diff_hours(data_Len)
-calc_penalt(diff_Len, "@김정규")
+calc_penalty(data_Len, diff_Len, "@김정규")
 
 diff_jw = get_diff_hours(data_jw)
-calc_penalt(diff_jw, "@임재원")
+calc_penalty(data_jw, diff_jw, "@임재원")
