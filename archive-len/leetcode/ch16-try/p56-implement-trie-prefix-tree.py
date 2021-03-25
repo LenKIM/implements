@@ -1,9 +1,11 @@
 import collections
 
+
 class TrieNode:
     def __init__(self):
-        self.word = False
+        self.is_complete_word = False
         self.children = collections.defaultdict(TrieNode)
+
 
 class Trie:
 
@@ -21,7 +23,7 @@ class Trie:
 
             node = node.children[char]
 
-        node.word = True
+        node.is_complete_word = True
 
     # 검색도 Insert 와 비슷하게, 그러나 반환값이 bool
     def search(self, word: str) -> bool:
@@ -30,9 +32,10 @@ class Trie:
         for char in word:
             if char not in node.children:
                 return False
+
             node = node.children[char]
 
-        return node.word
+        return node.is_complete_word
 
     def startWith(self, prefix: str) -> bool:
         node = self.root
@@ -43,9 +46,6 @@ class Trie:
             node = node.children[char]
 
         return True
-
-
-
 
 # Your Trie object will be instantiated and called as such:
 # obj = Trie()
