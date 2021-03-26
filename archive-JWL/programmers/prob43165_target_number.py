@@ -1,14 +1,19 @@
-def solution(numbers, target):
+def dfs(numbers, target, sum_items, idx):
     answer = 0
 
-    if len(numbers) == 0:
-        if target == 0:
+    if len(numbers) <= idx:
+        if target == sum_items:
             return 1
         else:
             return 0
 
-    for i, num in enumerate(numbers):
-        answer += solution(numbers[:i] + numbers[i + 1:], target - num)
-        answer += solution(numbers[:i] + numbers[i + 1:], target + num)
+    answer += dfs(numbers, target, sum_items + numbers[idx], idx + 1)
+    answer += dfs(numbers, target, sum_items - numbers[idx], idx + 1)
+
+    return answer
+
+
+def solution(numbers, target):
+    answer = dfs(numbers, target, 0, 0)
 
     return answer
