@@ -1,8 +1,5 @@
 '''
  https://programmers.co.kr/learn/courses/30/lessons/43162
-
-
-
 '''
 from typing import List
 
@@ -30,5 +27,7 @@ def solution(n, computers: List):
     return answer
 
 
-i = solution(3, [[1, 1, 0], [1, 1, 1], [0, 1, 1]])
+i = solution(3, [[1, 1, 0],
+                 [1, 1, 1],
+                 [0, 1, 1]])
 print(i)
