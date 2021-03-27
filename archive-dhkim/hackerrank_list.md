@@ -22,9 +22,9 @@
 
 
 ### 4. sorting
-- [ ] Sorting: Bubble Sort
-- [ ] Mark and Toys
-- [ ] Sorting: Comparator
+- [x] Sorting: Bubble Sort
+- [x] Mark and Toys
+- [x] Sorting: Comparator
 - [ ] Fraudulent Activity Notifications
 - [ ] Merge Sort: Counting Inversions
 
@@ -38,7 +38,7 @@
 
 
 ### 6. greedy-algorithms
-- [ ] Minimum Absolute Difference in an Array
+- [x] Minimum Absolute Difference in an Array
 - [ ] Luck Balance
 - [ ] Greedy Florist
 - [ ] Max Min
