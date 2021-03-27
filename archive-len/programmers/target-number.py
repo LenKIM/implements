@@ -35,6 +35,24 @@ def solution(numbers, target):
     else:
         return solution(numbers[1:], target-numbers[0]) + solution(numbers[1:], target+numbers[0])
 
+def solution2(numbers, target):
+    answer = 0
 
-i = solution([1, 2, 3, 4, 5], 3)
+    def dfs(idx, acc):
+
+        if idx == len(numbers):
+            if acc == target:
+                return 1
+            else:
+                return 0
+
+        pos = dfs(idx + 1, acc + numbers[idx])
+        nag = dfs(idx + 1, acc - numbers[idx])
+        return pos + nag
+
+    answer = dfs(0, 0)
+
+    return answer
+
+i = solution2([1, 2, 3], 3)
 print(i)

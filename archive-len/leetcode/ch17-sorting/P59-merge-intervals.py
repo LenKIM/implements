@@ -1,4 +1,3 @@
-import collections
 from typing import List
 
 
@@ -7,27 +6,39 @@ from typing import List
 # 1,3 | 2, 6
 
 class Solution:
+    # def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+    #     if not intervals:
+    #         return intervals
+    #
+    #     l = sorted(intervals, key=lambda x: x[0])
+    #
+    #     # 하나씩 꺼내오면서 만약 이전값과 합쳐질 수 있다면 합치기
+    #     q = [l[0]]
+    #     for interval in l:
+    #
+    #         # if q:
+    #         temp = q[-1]
+    #         if temp[0] <= interval[0] <= temp[1]:
+    #             if temp[0] <= interval[1] <= temp[1]:
+    #                 pass
+    #             else:
+    #                 temp = q.pop()
+    #                 q.append([temp[0], interval[1]])
+    #         else:
+    #             q.append(interval)
+    #     return q
+
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
-        if not intervals:
-            return intervals
-
-        l = sorted(intervals, key=lambda x: x[0])
-
-        # 하나씩 꺼내오면서 만약 이전값과 합쳐질 수 있다면 합치기
-        q = [l[0]]
-        for interval in l:
-
-            # if q:
-            temp = q[-1]
-            if temp[0] <= interval[0] <= temp[1]:
-                if temp[0] <= interval[1] <= temp[1]:
-                    pass
-                else:
-                    temp = q.pop()
-                    q.append([temp[0], interval[1]])
+        merged = []
+        for i in sorted(intervals, key=lambda x: x[0]):
+            print(i)
+            if merged and i[0] <= merged[-1][1]:
+                merged[-1][1] = max(merged[-1][1], i[1])
             else:
-                q.append(interval)
-        return q
+                merged += i,
+                # , comma 사용법 특이..!
+        return merged
+
 
 
 # Solution().merge([[2,6],[1,3],[8,10],[9,18]])
