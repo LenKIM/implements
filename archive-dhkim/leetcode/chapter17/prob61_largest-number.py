@@ -55,16 +55,16 @@ class Solution:
             pivot_idx = len(str_nums) // 2
             pivot = str_nums[pivot_idx]
 
-            upper, lower = [], []
-            for idx, n in enumerate(str_nums):
-                if idx == pivot_idx:
-                    continue
-                if pivot + n > n + pivot:
+            upper, same, lower = [], [], []
+            for n in str_nums:
+                if n == pivot:
+                    same.append(n)
+                elif pivot + n > n + pivot:
                     lower.append(n)
                 else:
                     upper.append(n)
 
-            return quick_sort(upper) + [pivot] + quick_sort(lower)
+            return quick_sort(upper) + same + quick_sort(lower)
 
         # 문자열 타입으로 캐스팀
         cast_nums = [str(n) for n in nums]
@@ -72,5 +72,5 @@ class Solution:
         # 정렬
         sorted_nums = quick_sort(cast_nums)
 
-        # 결과 리턴
-        return "".join(sorted_nums)
+        # 결과 리턴 ([0, 0] -> "00" 인 케이스가 있어서 int변환 후 다시 str 변환... 번거롭...)
+        return str(int("".join(sorted_nums)))
