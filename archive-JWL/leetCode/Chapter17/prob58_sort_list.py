@@ -51,24 +51,3 @@ class Solution:
         result = self.merge1(self.sortList(head), self.sortList(runner1))
 
         return result
-
-
-
-    def sortList(self, head: ListNode) -> ListNode:
-        runner1 = head
-        runner2 = head
-
-        if not (head and head.next):
-            return head
-
-        while runner2 and runner2.next:
-            half, runner1, runner2 = runner1, runner1.next, runner2.next.next
-
-        half.next = None
-
-        self.printList(head)
-        self.printList(runner1)
-        print("----")
-        result = self.merge1(self.sortList(head), self.sortList(runner1))
-
-        return result
