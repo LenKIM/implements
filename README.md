@@ -17,12 +17,7 @@
 | [문제56](https://leetcode.com/problems/implement-trie-prefix-tree)<br>[문제57](https://leetcode.com/problems/palindrome-pairs) | - [더 맵게](https://programmers.co.kr/learn/courses/30/lessons/42626)<br>- [Minimum Absolute Difference in an Array](https://www.hackerrank.com/challenges/minimum-absolute-difference-in-an-array/problem) | len 👌<br>dhkim 🙅‍♂️<br>jwl 👌 |
 | [문제58](https://leetcode.com/problems/sort-list)<br>[문제59](https://leetcode.com/problems/merge-intervals)<br>[문제60](https://leetcode.com/problems/insertion-sort-list) | - [타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165)<br>- [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) | len 🙅‍♂️<br>dhkim 👌<br>jwl 👌 |
 | [문제61](https://leetcode.com/problems/largest-number)<br>[문제62](https://leetcode.com/problems/valid-anagram)<br>[문제63](https://leetcode.com/problems/sort-colors)<br>[문제64](https://leetcode.com/problems/k-closest-points-to-origin) |  | |
-
-
-
-
-
-
+| [문제65](https://leetcode.com/problems/binary-search/)<br/>[문제66](https://leetcode.com/problems/search-in-rotated-sorted-array/)<br/>[문제67](https://leetcode.com/problems/intersection-of-two-arrays/)<br/>[문제68](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | | |
 
 
 
