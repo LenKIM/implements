@@ -6,7 +6,7 @@ class Solution:
 
         def dfs(_nums, _target, low=None, high=None):
             low = low or 0
-            if high == None:
+            if high is None:
                 high = len(_nums) - 1
 
             if low > high:
