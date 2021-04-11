@@ -6,6 +6,8 @@ https://leetcode.com/problems/intersection-of-two-arrays/
 두 배열의 교집합
 [1,2,2,1]
 [2,2]
+
+hashmap -> unique
 = [ 2 ]
 
 [4,9,5]

@@ -4,6 +4,12 @@ from typing import List
 # [2, 7, 11, 15]
 #  target > 9 라면? 2, 7을 더해야 함. 그 때 인덱스를 출력해야 함
 # 원하는 숫자를 만드는 방법은?
+'''
+Input: nums = [3,2,4], target = 6
+Input: nums = [3,3], target = 6
+Input: nums = [2,7,11,15], target = 9
+
+'''
 
 class Solution(object):
 
