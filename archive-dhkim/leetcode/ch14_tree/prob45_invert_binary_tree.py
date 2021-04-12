@@ -28,3 +28,18 @@ class Solution:
         dfs(root)
 
         return root
+
+    def invertTree_another(self, root: TreeNode) -> TreeNode:
+        def dfs(node):
+            if node is None:
+                return None
+
+            left_child = dfs(node.left)
+            right_child = dfs(node.right)
+
+            node.left = right_child
+            node.right = left_child
+
+            return node
+
+        return dfs(root)
