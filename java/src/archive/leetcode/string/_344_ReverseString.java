@@ -1,5 +1,9 @@
 package archive.leetcode.string;
 
+/**
+ * https://leetcode.com/problems/reverse-string
+ * In-place Order 테스트하기
+ */
 public class _344_ReverseString {
 
     public void reverseString(char[] s) {
@@ -8,9 +12,15 @@ public class _344_ReverseString {
 
     public void helper(char[] s, int left, int right) {
         if (left >= right) return;
+
         char tmp = s[left];
-        s[left++] = s[right];
-        s[right--] = tmp;
+
+        s[left] = s[right];
+        left = left + 1;
+
+        s[right] = tmp;
+        right = right - 1;
+
         helper(s, left, right);
     }
 
