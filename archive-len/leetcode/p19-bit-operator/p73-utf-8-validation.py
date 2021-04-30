@@ -1,4 +1,5 @@
 from typing import List
+
 """
 https://leetcode.com/problems/utf-8-validation/
 
@@ -13,87 +14,57 @@ UTF-8 구조?
 
 """
 
+
 class Solution:
+    def check(self, _list, n):
+        # 조건 충족안하면 True
+        if len(_list) != n:
+            return True
+
+        for n in _list:
+            if not format(n, '#010b').startswith("0b10"):
+                return True
+        return False
+
     def validUtf8(self, data: List[int]) -> bool:
-        first = format(data[0], '#010b')
-        start = 0
-        while start <= len(data):
-            if first.startswith('0b0'):
+        # offset 을 결정
+        offset = 0
+        size = len(data)
+        while size > offset:
 
-                if len(data) == 1:
-                    value = data[0]
-                    if format(value, '#010b')[2:4] == '10':
-                        return False
-                else:
+            current = format(data[offset], '#010b')
+            if current.startswith("0b0"):
+                start = offset
+                offset = offset + 1
+                if self.check(data[start+1:offset], 0):
                     return False
 
-                return True
-
-            elif first.startswith('0b110'):
-                fixed_bytes = data[1:2]
-                if len(data) >= 2:
-                    rest_byte = data[2]
-                else:
-                    rest_byte = 0
-
-
-                if len(fixed_bytes) < 1:
+            elif current.startswith("0b110"):
+                start = offset
+                offset = offset + 2
+                if self.check(data[start+1:offset], 1):
                     return False
 
-                for fixed_byte in fixed_bytes:
-                    if format(fixed_byte, '#010b')[2:4] != '10':
-                        return False
-
-                if format(rest_byte, '#010b')[2:4] == '10':
+            elif current.startswith("0b1110"):
+                start = offset
+                offset = offset + 3
+                if self.check(data[start+1:offset], 2):
                     return False
 
-                return True
-            elif first.startswith('0b1110'):
-
-                fixed_bytes = data[1:3]
-                if len(data) >= 4:
-                    rest_byte = data[3]
-                else:
-                    rest_byte = 0
-
-                if len(fixed_bytes) < 2:
+            elif current.startswith("0b11110"):
+                start = offset
+                offset = offset + 4
+                if self.check(data[start+1:offset], 3):
                     return False
-
-                for fixed_byte in fixed_bytes:
-                    if format(fixed_byte, '#010b')[2:4] != '10':
-                        return False
-
-                if format(rest_byte, '#010b')[2:4] == '10':
-                    return False
-                return True
-            elif first.startswith('0b11110'):
-                fixed_bytes = data[1:4]
-                if len(data) >= 5:
-                    rest_byte = data[4]
-                else:
-                    rest_byte = 0
-
-                if len(fixed_bytes) < 3:
-                    return False
-
-                for fixed_byte in fixed_bytes:
-                    if format(fixed_byte, '#010b')[2:4] != '10':
-                        return False
-
-                if format(rest_byte, '#010b')[2:4] == '10':
-                    return False
-                return True
             else:
                 return False
+        return True
 
 
-
-# utf_ = Solution().validUtf8([197, 130, 1])
+utf_ = Solution().validUtf8([197, 130, 1])
 # utf_ = Solution().validUtf8([235, 140, 4])
-# utf_ = Solution().validUtf8([10])
-utf_ = Solution().validUtf8([228,189,160,229,165,189,13,10])
+# utf_ = Solution().validUtf8([237])
+# utf_ = Solution().validUtf8([228, 189, 160, 229, 165, 189, 13, 10])
 # utf_ = Solution().validUtf8([115,100,102,231,154,132,13,10])
 # utf_ = Solution().validUtf8([39,89,227,83,132,95,10,0])
 print(utf_)
-
-
