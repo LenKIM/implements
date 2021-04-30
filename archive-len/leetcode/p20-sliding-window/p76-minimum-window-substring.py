@@ -17,35 +17,34 @@ q 에다가 idx 넣고,
 
 3. 반복 하면서 가장 작은 값을 찾으면 되지 않을까?  
 
+## 못풀었음. 답안 참조
 '''
 
 
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
+        need = collections.Counter(t)
+        missing = len(t)
+        left = start = end =0
 
-        target = sorted(t)
-        counter = collections.Counter(t)
-        result = ""
-        dict = collections.defaultdict(list) # index 를 넣어준다.
-        for idx, val in enumerate(s):
+        # 오른쪽 포인터 이동
+        for right, char in enumerate(s, 1):
+            missing -= need[char] > 0
+            need[char] -= 1
 
-            if val in counter.keys():
+            # 필요 문자가 0이면 왼쪽 포인터 이동 판단
+            if missing == 0:
+                while left < right and need[s[left]] < 0:
+                    need[s[left]] += 1
+                    left += 1
 
-                if counter[val] == 0:
-                    dict[val].insert(0, idx)
-                else:
-                    counter[val] = counter[val] - 1
-                    dict[val] = dict[val] + [idx]
-                    dict[val] = sorted(dict[val])
+                if not end or right - left <= end-start:
+                    start, end = left, right
+                    need[s[left]] += 1
+                    missing += 1
+                    left += 1
 
-
-                    ...
-                    # dict_values_ = s[min(dict.values()): max(dict.values())+1]
-                    # if min_value > len(dict_values_):
-                    #     min_value = len(dict_values_)
-                    #     result = dict_values_
-
-        return result
+        return s[start:end]
 
 
 Solution().minWindow("ADOBECODEBANC", "ABC")
