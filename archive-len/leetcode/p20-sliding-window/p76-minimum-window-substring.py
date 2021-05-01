@@ -25,7 +25,7 @@ class Solution:
     def minWindow(self, s: str, t: str) -> str:
         need = collections.Counter(t)
         missing = len(t)
-        left = start = end =0
+        left = start = end = 0
 
         # 오른쪽 포인터 이동
         for right, char in enumerate(s, 1):
