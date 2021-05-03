@@ -22,9 +22,9 @@
 
 
 ### 4. sorting
-- [ ] Sorting: Bubble Sort
-- [ ] Mark and Toys
-- [ ] Sorting: Comparator
+- [X] Sorting: Bubble Sort
+- [X] Mark and Toys
+- [X] Sorting: Comparator
 - [ ] Fraudulent Activity Notifications
 - [ ] Merge Sort: Counting Inversions
 
