@@ -4,7 +4,22 @@ from typing import List
 
 class Solution:
     def leastInterval(self, tasks: List[str], n: int) -> int:
-        q = collections.Counter(tasks).most_common(n+1)
+        result = 0
+        chars = collections.Counter(tasks)
+        while True:
+            size = len(chars)
+            sub = 0
+            for char, cnt in chars.most_common(n+1):
+                sub+=1
+                result+=1
+                chars.subtract(char)
+                chars += collections.Counter()
+
+            if not chars:
+                break
+
+            result += n - sub + 1
+        return result
         #size = len(tasks)
         # char_nums = [0]*(ord('Z')-ord('A')+1)
         # chars = []
@@ -25,9 +40,6 @@ class Solution:
         #         else :
         #             q.append("idle")
 
-
-        print(q)
-        return 0
 solution = Solution()
-temp = ["A","A","A","B","B","B","C","C","C"]
-solution.leastInterval(temp,10)
+temp = ["A","A","A","B","B","B"]
+print(solution.leastInterval(temp,2))
