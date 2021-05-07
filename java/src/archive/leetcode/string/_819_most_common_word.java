@@ -16,8 +16,7 @@ public class _819_most_common_word {
         String[] words = normalizedStr.split("\\s+");
 
         Set<String> bannedWords = new HashSet();
-        for (String word : banned)
-            bannedWords.add(word);
+        bannedWords.addAll(Arrays.asList(banned));
 
         Map<String, Integer> wordCount = new HashMap();
 
