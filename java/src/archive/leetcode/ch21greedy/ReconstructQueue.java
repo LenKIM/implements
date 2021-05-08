@@ -1,4 +1,4 @@
-package archive.leetcode;
+package archive.leetcode.ch21greedy;
 
 import java.util.Arrays;
 import java.util.LinkedList;

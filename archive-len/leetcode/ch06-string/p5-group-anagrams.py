@@ -1,6 +1,18 @@
 import collections
 from typing import List
+"""
+https://leetcode.com/problems/group-anagrams/
 
+Input: strs = ["eat","tea","tan","ate","nat","bat"]
+Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+Input: strs = [""]
+Output: [[""]]
+
+Input: strs = ["a"]
+Output: [["a"]]
+
+"""
 input = ["eat", "tea", "tan", "ate", "nat", "bat"]
 
 
