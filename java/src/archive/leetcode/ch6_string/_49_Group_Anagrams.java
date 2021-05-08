@@ -1,4 +1,4 @@
-package archive.leetcode.string;
+package archive.leetcode.ch6_string;
 
 import java.util.*;
 

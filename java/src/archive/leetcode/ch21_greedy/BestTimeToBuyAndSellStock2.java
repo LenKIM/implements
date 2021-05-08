@@ -1,4 +1,4 @@
-package archive.leetcode.ch21greedy;
+package archive.leetcode.ch21_greedy;
 
 /**
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/

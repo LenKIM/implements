@@ -1,4 +1,4 @@
-package archive.leetcode.string;
+package archive.leetcode.ch6_string;
 
 /**
  * https://leetcode.com/problems/reverse-string

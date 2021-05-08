@@ -1,4 +1,5 @@
 from typing import List
+
 """
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 
@@ -27,7 +28,4 @@ class Solution:
         return abs(sum)
 
 
-Solution().maxProfit([7,6,4,3,1])
-
-
-
+Solution().maxProfit([7, 6, 4, 3, 1])

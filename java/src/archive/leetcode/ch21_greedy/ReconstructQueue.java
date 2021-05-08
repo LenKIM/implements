@@ -1,4 +1,4 @@
-package archive.leetcode.ch21greedy;
+package archive.leetcode.ch21_greedy;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -24,10 +24,7 @@ public class ReconstructQueue {
 
             result.add(tallerCount, new int[]{height, tallerCount});
         }
-        int[][] ints = result.stream().toArray(int[][]::new);
-        // List to Array
-//        return ints;
-        return ints;
+        return result.toArray(int[][]::new);
     }
 
     public static void main(String[] args) {

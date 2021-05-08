@@ -1,4 +1,4 @@
-package archive.leetcode.string;
+package archive.leetcode.ch6_string;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -26,9 +26,5 @@ public class _6_ValidPalindrome {
             }
         }
         return true;
-    }
-
-    public static void main(String[] args) {
-
     }
 }
