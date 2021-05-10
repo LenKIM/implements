@@ -21,7 +21,7 @@
 | [문제69](https://leetcode.com/problems/search-a-2d-matrix-ii/)<br/>[문제70](https://leetcode.com/problems/single-number/)<br/>[문제71](https://leetcode.com/problems/hamming-distance/)<br/>[문제72](https://leetcode.com/problems/sum-of-two-integers/) |                                                              |                             |
 | [문제73](https://leetcode.com/problems/utf-8-validation)<br/>[문제74](https://leetcode.com/problems/number-of-1-bits)<br/>[문제75](https://leetcode.com/problems/sliding-window-maximum)<br/>[문제76](https://leetcode.com/problems/minimum-window-substring)<br/>[문제77](https://leetcode.com/problems/longest-repeating-character-replacement) |                                                              |                             |
 | [문제78](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)<br/>[문제79](https://leetcode.com/problems/queue-reconstruction-by-height) |                                                              |                             |
-|                                                              |                                                              |                             |
+| [문제80](https://leetcode.com/problems/task-scheduler)<br/>[문제81](https://leetcode.com/problems/gas-station)<br />[문제82](https://leetcode.com/problems/assign-cookies) |                                                              |                             |
 |                                                              |                                                              |                             |
 
 
