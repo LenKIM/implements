@@ -1,3 +1,7 @@
+from functools import cmp_to_key
+from typing import List
+
+
 def compare(x, y):
     x_res = x[0]**2 + x[1]**2
     y_res = y[0]**2 + y[1]**2
